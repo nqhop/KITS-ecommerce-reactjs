@@ -3,11 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
 
+body {
+    --scrollbar-width: 9px;
 }
+
+body::-webkit-scrollbar {
+    width: scrollbarwidthpx;
+}
+
 a {
     text-decoration: none;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.wrapper-home-details-about-pricing{
+    max-width: 1320px;
+    margin: 0 auto;
 }
 
 /* .App {

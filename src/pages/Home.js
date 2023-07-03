@@ -7,11 +7,11 @@ import AllProduct from "components/AllProduct/AllProduct";
 
 const Home = () => {
     return <>
-    <Slider/>
-    <FavoritesProduct/>
-    <AllProduct/>
-    <GoodDesign/>
-    <Discover/>
+        <Slider />
+        <FavoritesProduct />
+        <AllProduct />
+        <GoodDesign />
+        <Discover />
     </>
 }
 export default Home;
