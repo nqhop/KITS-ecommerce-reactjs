@@ -2,6 +2,7 @@ import styled from "styled-components"
 import '../../App.css'
 import curve from 'assets/images/curve.svg'
 import playIcon from 'assets/icons/playicon.svg'
+import waveCheckIcon from 'assets/icons/wave-check.svg'
 import { Button } from "components/Button/Button"
 const SliderStyled = styled.div`
     height: 1000px;
@@ -58,6 +59,12 @@ const SliderStyled = styled.div`
         display: flex;
         align-items: center;
     }
+    .join-and-play-btn{
+        margin-right: 40px;
+    }
+    .play-now{
+        margin-right: 13px;
+    }
     .play-now-text{
         color: #2E2C2C;
         font-size: 24px;
@@ -80,14 +87,33 @@ const Slider = () => {
                     A solution for easy and flexible online learning, you can study anywhere and at anytime on this platform
                 </p>
                 <img src={curve} />
+
                 <div className="join-and-play">
-                    <Button>Join For Free</Button>
+                    <div className="join-and-play-btn">
+                        <Button>Join For Free</Button>
+                    </div>
                     <div className="play-now">
                         <img src={playIcon} />
                     </div>
                     <p className="play-now-text">Play now</p>
                 </div>
 
+                <div className="wave-check">
+                    <ul>
+                        <li>
+                            <img src={waveCheckIcon}/>
+                            <p>Experienced Instructors</p>
+                        </li>
+                        <li>
+                            <img src={waveCheckIcon}/>
+                            <p>Experienced Instructors</p>
+                        </li>
+                        <li>
+                            <img src={waveCheckIcon}/>
+                            <p>Experienced Instructors</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </SliderStyled>
